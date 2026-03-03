@@ -1,8 +1,22 @@
-/* Copyright (c) 2020 MTHS All rights reserved
+/* Copyright (c) 2026 MTHS All rights reserved
  *
- * Created by: XXX
- * Created on: Sep 2020
- * This program ...
-*/
+ * Created by: Jayden
+ * Created on: Mar 2026
+ * This program shows you more cookies when the "a" button is clicked and reset cookies when the "b" button is clicked
+ */
 
-basic.showString('Hello, World!')
+// setup
+basic.clearScreen()
+basic.showIcon(IconNames.Happy)
+
+let cookies: number = 0
+
+input.onButtonPressed(Button.A, function () {
+    basic.clearScreen()
+    cookies = (cookies + 1)
+})
+
+input.onButtonPressed(Button.B, function () {
+    basic.clearScreen()
+    cookies = 0
+})
