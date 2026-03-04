@@ -16,12 +16,12 @@ let cookies: number = 0
 input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
     cookies = (cookies + 1)
-    basic.showNumber(cookies)
+    basic.showString(cookies.toString())
 })
 
 // when the B button is pressed
 input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
     cookies = 0
-    basic.showNumber(cookies)
+    basic.showString(cookies.toString())
 })
