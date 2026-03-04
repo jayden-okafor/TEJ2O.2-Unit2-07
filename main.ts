@@ -9,6 +9,7 @@
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
+// variable
 let cookies: number = 0
 
 // when the A button is pressed
