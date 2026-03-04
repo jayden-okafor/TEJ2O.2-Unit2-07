@@ -15,7 +15,7 @@ let cookies: number = 0
 // when the A button is pressed
 input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
-    cookies = (cookies + 1)
+    cookies = cookies + 1
     basic.showString(cookies.toString())
 })
 
